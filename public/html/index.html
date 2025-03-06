@@ -1,15 +1,128 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Eco-Gardening | Sustainable Landscaping</title>
     <link rel="stylesheet" href="../static/output.css">
 </head>
-<body>
-    
-    <h1 class="p-2 text-center">Welcome to my site!</h1>
-    <p>This is the future of gardening</p>
+<body class="bg-green-50 text-gray-800">
 
+    <!-- ✅ Navigation Bar -->
+    <header class="bg-green-700 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <!-- Logo -->
+            <h1 class="text-3xl font-bold">Eco-Gardening</h1>
+    
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-white text-2xl">
+                ☰
+            </button>
+    
+            <!-- Navigation Links -->
+            <nav id="menu" class="z-10 hidden absolute top-16 left-0 w-full bg-green-700/80 md:static md:w-auto md:flex space-y-4 md:space-y-0 md:space-x-6 md:bg-transparent md:flex-row p-4 md:p-0">
+                <a href="#" class="block md:inline hover:text-gray-300">Főmenü</a>
+                <a href="#services" class="block md:inline hover:text-gray-300">Szolgáltatások</a>
+                <a href="#about" class="block md:inline hover:text-gray-300">Rólunk</a>
+                <a href="#contact" class="block md:inline hover:text-gray-300">Kapcsolat</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ✅ Hero Section -->
+    <section class="relative bg-cover bg-center h-[500px] flex items-center justify-center text-center text-white" 
+        style="background-image: url('../static/garden-hero.webp');">
+        <div class="bg-black/50 p-6 rounded-lg">
+            <h2 class="text-4xl font-extrabold">Elhozzuk a természetet az otthonodba!</h2>
+            <p class="mt-3 text-lg">Fenntartható kertészkedés egy zöldebb jövőéert</p>
+            <a href="#contact" class="mt-4 inline-block bg-green-500 px-6 py-3 text-lg font-bold rounded-lg shadow-md hover:bg-green-600">Kapcsolatfelvétel</a>
+        </div>
+    </section>
+
+    <!-- ✅ About Us Section -->
+    <section id="about" class="py-16 text-center bg-white">
+        <h2 class="text-3xl font-bold text-green-700">About Eco-Gardening</h2>
+        <p class="mt-4 text-lg max-w-2xl mx-auto">We specialize in eco-friendly gardening, using sustainable practices to create beautiful landscapes.</p>
+    </section>
+
+    <!-- ✅ Services Section -->
+    <section id="services" class="bg-green-100 py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold text-green-700">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8 px-6">
+                <!-- Service Card 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-green-700">Lawn Care</h3>
+                    <p class="mt-2 text-gray-600">Professional lawn maintenance for a lush green space.</p>
+                </div>
+                <!-- Service Card 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-green-700">Organic Gardening</h3>
+                    <p class="mt-2 text-gray-600">Eco-friendly gardens with sustainable techniques.</p>
+                </div>
+                <!-- Service Card 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-green-700">Landscaping</h3>
+                    <p class="mt-2 text-gray-600">Custom landscape design tailored to your space.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ✅ Why Choose Us -->
+    <section class="py-16 text-center">
+        <h2 class="text-3xl font-bold text-green-700">Why Choose Us?</h2>
+        <div class="mt-8 flex flex-wrap justify-center gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-md w-64">
+                <h3 class="text-lg font-bold text-green-700">Eco-Friendly Practices</h3>
+                <p class="mt-2 text-gray-600">We use sustainable and organic methods.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md w-64">
+                <h3 class="text-lg font-bold text-green-700">Expert Team</h3>
+                <p class="mt-2 text-gray-600">Our gardeners have years of experience.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md w-64">
+                <h3 class="text-lg font-bold text-green-700">Customer Satisfaction</h3>
+                <p class="mt-2 text-gray-600">We ensure high-quality service and care.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ✅ Contact Section -->
+    <section id="contact" class="bg-green-200 py-16 grid grid-cols-2">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold text-green-700">Elérhetőségeink:</h2>
+            <a href=""><p class="text-xl text-green-500 pt-4">+36300763845</p></a>
+            <a href=""><p class="text-xl text-green-500 p-2">ecogardening@gmail.com</p></a>
+
+        </div>
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold text-green-700">Üzenj nekünk!</h2>
+            <p class="mt-4 text-lg">Lépj kapcsolatba velünk egy ingyenes konzultációra.</p>
+            <form class="mt-6 max-w-md mx-auto bg-white p-6 rounded-lg shadow-md">
+                <input type="text" placeholder="Név" class="w-full p-3 border border-gray-300 rounded-lg mb-4">
+                <input type="email" placeholder="Email" class="w-full p-3 border border-gray-300 rounded-lg mb-4">
+                <textarea placeholder="Üzenet" class="w-full p-3 border border-gray-300 rounded-lg mb-4"></textarea>
+                <button class="w-full bg-green-600 text-white py-3 rounded-lg font-bold hover:bg-green-700">Küldés</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ✅ Footer -->
+    <footer class="bg-green-700 text-white text-center py-4">
+        <p>© 2025 Eco-Gardening | All Rights Reserved</p>
+    </footer>
+
+    <p class="hidden"></p>
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const menu = document.getElementById("menu");
+    
+        menuBtn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+    </script>
+
+    
 </body>
 </html>
