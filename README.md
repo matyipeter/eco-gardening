@@ -12,6 +12,6 @@ This is a website for [Your Gardening Business Name], built with **Node.js**.
 
 1. Clone the repo:
    ```sh
-   git clone https://github.com/yourusername/gardening-website.git
-   cd gardening-website
+   git clone https://github.com/matyipeter/eco-gardening.git
+   cd eco-gardening
 
